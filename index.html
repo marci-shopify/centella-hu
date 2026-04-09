@@ -1,1 +1,1066 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centella Asiatica – Minden, amit tudni kell | centella.hu</title>
+  <meta name="description" content="A centella asiatica az egyik legjobban kutatott bőrápoló hatóanyag: sebgyógyítás, kollagénszintézis, bőrbarrier-erősítés. Tudj meg mindent – tanulmányokkal alátámasztva.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://centella.hu/">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Centella Asiatica – Minden, amit tudni kell">
+  <meta property="og:description" content="A centella asiatica az egyik legjobban kutatott bőrápoló hatóanyag. Tudj meg mindent – tanulmányokkal alátámasztva.">
+  <meta property="og:url" content="https://centella.hu/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="hu_HU">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Centella Asiatica – Minden, amit tudni kell a hatóanyagról",
+    "description": "A centella asiatica az egyik legjobban kutatott bőrápoló hatóanyag: sebgyógyítás, kollagénszintézis, bőrbarrier-erősítés.",
+    "inLanguage": "hu",
+    "url": "https://centella.hu/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Dermastamp",
+      "url": "https://dermastamp.hu"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0e0e0e;
+      --bg2: #161616;
+      --bg3: #1e1e1e;
+      --border: rgba(255,255,255,0.07);
+      --border2: rgba(255,255,255,0.12);
+      --ink: #f0ede8;
+      --ink2: rgba(240,237,232,0.6);
+      --ink3: rgba(240,237,232,0.35);
+      --gold: #EF9F27;
+      --gold2: #f5b84a;
+      --gold-dim: rgba(239,159,39,0.12);
+      --gold-dim2: rgba(239,159,39,0.06);
+      --green: #4a9e6b;
+      --green-dim: rgba(74,158,107,0.1);
+      --serif: 'DM Serif Display', Georgia, serif;
+      --sans: 'Figtree', sans-serif;
+      --radius: 12px;
+      --radius-lg: 20px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(14,14,14,0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: var(--serif);
+      font-size: 18px;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-cta {
+      background: var(--gold);
+      color: #000;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background 0.15s, transform 0.15s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--gold2); transform: translateY(-1px); }
+
+    /* HERO */
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 24px 60px;
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--gold);
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
+      color: var(--ink);
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .hero-lead {
+      font-size: clamp(17px, 2.2vw, 20px);
+      color: var(--ink2);
+      max-width: 640px;
+      margin-bottom: 44px;
+      line-height: 1.6;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+    .btn-primary {
+      background: var(--gold);
+      color: #000;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 14px 28px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-primary:hover {
+      background: var(--gold2);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(239,159,39,0.25);
+    }
+    .btn-secondary {
+      color: var(--ink2);
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 14px 4px;
+      border-bottom: 1px solid var(--border2);
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .btn-secondary:hover { color: var(--ink); border-color: var(--ink2); }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 32px;
+      left: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ink3);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero-scroll-line {
+      width: 40px;
+      height: 1px;
+      background: var(--ink3);
+      animation: scrollline 2s ease-in-out infinite;
+    }
+    @keyframes scrollline {
+      0%, 100% { transform: scaleX(1); opacity: 0.35; }
+      50% { transform: scaleX(0.5); opacity: 0.7; }
+    }
+
+    /* STATS BAR */
+    .stats-bar {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg2);
+      padding: 28px 24px;
+    }
+    .stats-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+    }
+    .stat {
+      background: var(--bg2);
+      padding: 20px 28px;
+      text-align: center;
+    }
+    .stat-num {
+      font-family: var(--serif);
+      font-size: 36px;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-label {
+      font-size: 13px;
+      color: var(--ink2);
+      line-height: 1.4;
+    }
+
+    /* SECTION COMMON */
+    .section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+    .section-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+    .section-lead {
+      font-size: 17px;
+      color: var(--ink2);
+      max-width: 600px;
+      margin-bottom: 48px;
+      line-height: 1.65;
+    }
+    .divider {
+      height: 1px;
+      background: var(--border);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* WHAT IS */
+    .what-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .what-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      transition: border-color 0.2s;
+    }
+    .what-card:hover { border-color: var(--border2); }
+    .what-card-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--gold-dim);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+    .what-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+    .what-card p {
+      font-size: 14px;
+      color: var(--ink2);
+      line-height: 1.6;
+    }
+
+    /* COMPOUNDS */
+    .compounds {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .compound-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .compound-item {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 32px;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+    .compound-item:last-child { border-bottom: none; }
+    .compound-name {
+      font-family: var(--serif);
+      font-size: 20px;
+      color: var(--gold);
+      line-height: 1.2;
+      padding-top: 2px;
+    }
+    .compound-name small {
+      display: block;
+      font-family: var(--sans);
+      font-size: 11px;
+      color: var(--ink3);
+      font-style: normal;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .compound-desc {
+      font-size: 15px;
+      color: var(--ink2);
+      line-height: 1.65;
+    }
+    .compound-desc strong { color: var(--ink); font-weight: 600; }
+
+    /* SCIENCE */
+    .study-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .study-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .study-card:hover { border-color: var(--border2); transform: translateY(-2px); }
+    .study-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--gold);
+      opacity: 0.4;
+    }
+    .study-year {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .study-card h4 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .study-card p {
+      font-size: 13px;
+      color: var(--ink2);
+      line-height: 1.6;
+    }
+
+    /* FOR WHOM */
+    .for-whom-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .for-whom-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .for-whom-card.yes {
+      border-color: rgba(74,158,107,0.3);
+      background: var(--green-dim);
+    }
+    .for-whom-card.yes:hover { border-color: rgba(74,158,107,0.5); }
+    .for-whom-card.caution {
+      border-color: rgba(239,159,39,0.2);
+      background: var(--gold-dim2);
+    }
+    .for-whom-badge {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .for-whom-card.yes .for-whom-badge { color: var(--green); }
+    .for-whom-card.caution .for-whom-badge { color: var(--gold); }
+    .for-whom-card h4 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .for-whom-card p {
+      font-size: 13px;
+      color: var(--ink2);
+      line-height: 1.55;
+    }
+
+    /* HOW TO USE */
+    .routine-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .routine-step {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .routine-step:last-child { border-bottom: none; }
+    .step-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg3);
+      font-family: var(--serif);
+      font-size: 22px;
+      color: var(--gold);
+      border-right: 1px solid var(--border);
+    }
+    .step-content {
+      padding: 24px 28px;
+      background: var(--bg2);
+    }
+    .step-timing {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink3);
+      margin-bottom: 6px;
+    }
+    .step-content h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .step-content p {
+      font-size: 14px;
+      color: var(--ink2);
+      line-height: 1.6;
+    }
+
+    /* MICRONEEDLING COMBO */
+    .combo-box {
+      background: linear-gradient(135deg, rgba(239,159,39,0.08) 0%, rgba(239,159,39,0.03) 100%);
+      border: 1px solid rgba(239,159,39,0.25);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      margin-top: 48px;
+    }
+    .combo-box h3 {
+      font-family: var(--serif);
+      font-size: 28px;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .combo-box p {
+      font-size: 16px;
+      color: var(--ink2);
+      line-height: 1.65;
+      max-width: 600px;
+      margin-bottom: 12px;
+    }
+    .combo-timeline {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 32px;
+    }
+    .timeline-item {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      text-align: center;
+    }
+    .timeline-time {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+    .timeline-action {
+      font-size: 13px;
+      color: var(--ink2);
+      line-height: 1.4;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      width: 100%;
+      background: var(--bg2);
+      border: none;
+      text-align: left;
+      padding: 20px 24px;
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      transition: background 0.15s;
+    }
+    .faq-q:hover { background: var(--bg3); }
+    .faq-q .faq-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border: 1px solid var(--border2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: var(--gold);
+      transition: transform 0.2s;
+    }
+    .faq-item.open .faq-q .faq-icon { transform: rotate(45deg); }
+    .faq-a {
+      display: none;
+      padding: 0 24px 20px;
+      font-size: 14px;
+      color: var(--ink2);
+      line-height: 1.7;
+      background: var(--bg2);
+    }
+    .faq-item.open .faq-a { display: block; }
+
+    /* CTA SECTION */
+    .cta-section {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 80px 24px;
+      text-align: center;
+    }
+    .cta-inner {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .cta-section .section-tag { justify-content: center; display: flex; }
+    .cta-section .section-title { font-size: clamp(28px, 4vw, 48px); }
+    .cta-section p {
+      font-size: 17px;
+      color: var(--ink2);
+      margin-bottom: 36px;
+      line-height: 1.65;
+    }
+    .cta-product-box {
+      background: var(--bg);
+      border: 1px solid var(--border2);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+    }
+    .cta-product-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--gold-dim);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    .cta-product-info h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .cta-product-info p {
+      font-size: 13px;
+      color: var(--ink2);
+      margin-bottom: 0;
+      line-height: 1.4;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 16px;
+      color: var(--ink2);
+    }
+    .footer-brand span { color: var(--gold); }
+    footer p {
+      font-size: 12px;
+      color: var(--ink3);
+    }
+    footer a {
+      color: var(--ink2);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.15s;
+    }
+    footer a:hover { color: var(--gold); }
+
+    /* ANIMATIONS */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 700px) {
+      .what-grid { grid-template-columns: 1fr; }
+      .study-cards { grid-template-columns: 1fr; }
+      .for-whom-grid { grid-template-columns: 1fr; }
+      .combo-timeline { grid-template-columns: repeat(2, 1fr); }
+      .compound-item { grid-template-columns: 1fr; gap: 8px; }
+      .cta-product-box { flex-direction: column; text-align: center; }
+      .stats-inner { grid-template-columns: 1fr; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">centella<span>.hu</span></a>
+    <a href="https://dermastamp.hu/products/centella" class="nav-cta" rel="noopener">Centella termékek →</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-eyebrow">Hatóanyag tudástár</div>
+    <h1>A bőr<br><em>legősibb</em><br>gyógyítója</h1>
+    <p class="hero-lead">A centella asiatica évezredek óta használt gyógynövény, amelyet ma a modern bőrápolástudomány is megerősített: kollagénszintézis, sebgyógyítás, bőrbarrier-erősítés — mind alátámasztva klinikai vizsgálatokkal.</p>
+    <div class="hero-actions">
+      <a href="https://dermastamp.hu/products/centella" class="btn-primary" rel="noopener">
+        Centella termékek megtekintése
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#mi-az" class="btn-secondary">Olvasd el az összefoglalót ↓</a>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      Görgetés
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat fade-up">
+        <div class="stat-num">2000+</div>
+        <div class="stat-label">éve használják gyógyászati célokra</div>
+      </div>
+      <div class="stat fade-up">
+        <div class="stat-num">4</div>
+        <div class="stat-label">fő aktív hatóanyag-csoport</div>
+      </div>
+      <div class="stat fade-up">
+        <div class="stat-num">100+</div>
+        <div class="stat-label">klinikai vizsgálat igazolja hatékonyságát</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- WHAT IS -->
+  <section class="section" id="mi-az">
+    <div class="section-tag">Mi az a centella asiatica?</div>
+    <h2 class="section-title">Egy gyógynövény, amit az Ayurvéda és a koreai bőrápolás is szeret</h2>
+    <p class="section-lead">A centella asiatica (más nevén gotu kola vagy tiger grass) egy Ázsiában őshonos lágy szárú növény, amelyet az Ayurvédától a tradicionális kínai orvoslásig mindenütt alkalmaztak. Ma a koreai skincare egyik legtöbbet kutatott hatóanyaga.</p>
+    <div class="what-grid">
+      <div class="what-card fade-up">
+        <div class="what-card-icon">🌿</div>
+        <h3>Természetes eredet</h3>
+        <p>Az Apiaceae (ernyősvirágzatúak) családba tartozó növény nedves, trópusi területeken él. Leveleiből nyerik ki a hatóanyagokat, amelyek koszmetikai és gyógyászati célokra egyaránt alkalmasak.</p>
+      </div>
+      <div class="what-card fade-up">
+        <div class="what-card-icon">🔬</div>
+        <h3>Tudományosan vizsgált</h3>
+        <p>A PubMed adatbázisban több száz vizsgálat foglalkozik a centella asiatica hatásaival. A sebgyógyítástól a kollagénszintézisen át a gyulladáscsökkentésig minden hatás klinikai bizonyítékkal rendelkezik.</p>
+      </div>
+      <div class="what-card fade-up">
+        <div class="what-card-icon">⚗️</div>
+        <h3>Aktív vegyületek</h3>
+        <p>A növény hatékonyságát elsősorban triterpen szaponinjainak köszönheti: asiaticosid, madecassoside, asiaticus sav és madecassic sav. Mindegyik más-más mechanizmuson keresztül hat a bőrre.</p>
+      </div>
+      <div class="what-card fade-up">
+        <div class="what-card-icon">🛡️</div>
+        <h3>Széles tolerancia</h3>
+        <p>Az egyik legbiztonságosabb hatóanyagnak számít a bőrápolásban. Még érzékeny, rosacea-s vagy microneedling utáni irritált bőrre is alkalmazható — sőt, ezekre kifejezetten ajánlott.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- COMPOUNDS -->
+  <section class="compounds">
+    <div class="section">
+      <div class="section-tag">Hatóanyagok</div>
+      <h2 class="section-title">Mit tartalmaz és miért működik?</h2>
+      <p class="section-lead">A centella asiatica hatásait négy fő vegyületcsoportnak köszönheti. Nem elég, ha csak az egyiket ismered — mindegyik más szerepet tölt be.</p>
+      <div class="compound-list">
+        <div class="compound-item fade-up">
+          <div class="compound-name">
+            Asiaticosid
+            <small>Triterpen szaponin</small>
+          </div>
+          <div class="compound-desc">
+            <strong>Elsősorban a kollagénszintézist serkenti.</strong> Aktiválja a fibroblasztokat — azokat a bőrsejttípusokat, amelyek a kollagén és az elasztin előállításáért felelősek. In vitro vizsgálatokban szignifikánsan emelt I-es és III-as típusú kollagén-expressziót mutattak ki. Microneedling után különösen releváns, mivel a kezelés pont ezeket a sejteket aktiválja.
+          </div>
+        </div>
+        <div class="compound-item fade-up">
+          <div class="compound-name">
+            Madecassoside
+            <small>Triterpen szaponin</small>
+          </div>
+          <div class="compound-desc">
+            <strong>A gyulladáscsökkentő és sebgyógyító főszereplő.</strong> Gátolja a proinflammatorikus citokinek (TNF-α, IL-1β) termelését, ezzel csökkenti a bőrpírt és a duzzanatot. Tanulmányok szerint felgyorsítja az epidermiális barrier visszaépülését sérülés után — ez teszi nélkülözhetetlenné microneedling utáni regenerációban.
+          </div>
+        </div>
+        <div class="compound-item fade-up">
+          <div class="compound-name">
+            Asiaticus sav
+            <small>Triterpen sav</small>
+          </div>
+          <div class="compound-desc">
+            <strong>Antioxidáns és antiaging hatású.</strong> Semlegesíti a szabadgyököket, amelyek a bőr korai öregedéséért részben felelősek. Emellett vizsgálatok szerint befolyásolja a mátrix metalloproteináz enzimek (MMP) aktivitását, amelyek a kollagénbontásban játszanak szerepet — ezzel indirekt antiaging hatást fejt ki.
+          </div>
+        </div>
+        <div class="compound-item fade-up">
+          <div class="compound-name">
+            Madecassic sav
+            <small>Triterpen sav</small>
+          </div>
+          <div class="compound-desc">
+            <strong>A barrier-erősítés és hidratáció kulcsa.</strong> Serkenti a ceramid-szintézist, ami az egészséges bőrbarrier egyik alapköve. Erős antioxidáns aktivitással is rendelkezik, és szinergikusan hat a madecassoside-dal a sebgyógyítási folyamatban.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SCIENCE -->
+  <section class="section">
+    <div class="section-tag">Klinikai bizonyítékok</div>
+    <h2 class="section-title">Mit mutatnak a vizsgálatok?</h2>
+    <p class="section-lead">Válogatott tanulmányok a centella asiatica bőrgyógyászati alkalmazásáról — nem marketingszöveg, hanem peer-reviewed irodalom.</p>
+    <div class="study-cards">
+      <div class="study-card fade-up">
+        <div class="study-year">Kollagénszintézis</div>
+        <h4>Fibroblaszt-aktiváció és kollagéntartalom növekedése</h4>
+        <p>Humán fibroblaszt kultúrákon végzett vizsgálatban az asiaticosid kezelés szignifikánsan emelt I-es és III-as típusú prokollagén szintézist eredményezett dózisfüggő módon. A hatás mechanizmusa a TGF-β jelátviteli út aktiválásán keresztül valósul meg.</p>
+      </div>
+      <div class="study-card fade-up">
+        <div class="study-year">Sebgyógyítás</div>
+        <h4>Gyorsított epidermiális regeneráció</h4>
+        <p>Madecassoside topikális alkalmazása kontrollált sebmodellben gyorsabb re-epitelizációt és erősebb granulációs szöveti képzést mutatott a kontrollcsoporthoz képest. A hatás különösen az első 48–72 órában volt kifejezett.</p>
+      </div>
+      <div class="study-card fade-up">
+        <div class="study-year">Hegesedés</div>
+        <h4>Hipertrófiás hegek és striae kezelése</h4>
+        <p>Klinikai vizsgálatban centella-tartalmú krém alkalmazása szignifikánsan csökkentette a keloid és hipertrófiás hegek méretét, vörösségét és tüneteit 6 hetes kezelési periódus után a placebóhoz képest.</p>
+      </div>
+      <div class="study-card fade-up">
+        <div class="study-year">Barrier funkció</div>
+        <h4>TEWL-csökkentés és hidratáció javulása</h4>
+        <p>Atópiás dermatitisben szenvedő betegeken végzett vizsgálatban centella-tartalmú emolient szignifikánsan csökkentette a transepidermális vízelvesztést (TEWL) és javította a corneoménes hidratációs értékeket 4 hetes alkalmazás után.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FOR WHOM -->
+  <section class="section">
+    <div class="section-tag">Kinek való?</div>
+    <h2 class="section-title">Bőrtípus és állapot szerint</h2>
+    <p class="section-lead">A centella asiatica az egyik legszélesebb toleranciával rendelkező hatóanyag — de van néhány szempont, amit érdemes tudni.</p>
+    <div class="for-whom-grid">
+      <div class="for-whom-card yes fade-up">
+        <div class="for-whom-badge">✓ Ideális</div>
+        <h4>Érzékeny bőr</h4>
+        <p>A madecassoside gyulladáscsökkentő hatása miatt kifejezetten jól tolerálható reaktív, vörösödésre hajlamos bőrtípusokon.</p>
+      </div>
+      <div class="for-whom-card yes fade-up">
+        <div class="for-whom-badge">✓ Ideális</div>
+        <h4>Microneedling után</h4>
+        <p>A barrier-erősítő és sebgyógyító hatások miatt az egyik legjobb post-needling hatóanyag. Csökkenti a downtime-ot és maximalizálja a regenerációt.</p>
+      </div>
+      <div class="for-whom-card yes fade-up">
+        <div class="for-whom-badge">✓ Ideális</div>
+        <h4>Akne hegek, PIE</h4>
+        <p>A kollagénszintézis-serkentés és gyulladáscsökkentés kombinációja segít az atrófiás hegek és posztinflammatórikus eritéma halványításában.</p>
+      </div>
+      <div class="for-whom-card yes fade-up">
+        <div class="for-whom-badge">✓ Ideális</div>
+        <h4>Antiaging rutin</h4>
+        <p>A fibroblaszt-aktiváció és antioxidáns hatás révén hosszú távú preventív hatással bír a bőr korral járó kollagénveszteségére.</p>
+      </div>
+      <div class="for-whom-card yes fade-up">
+        <div class="for-whom-badge">✓ Ideális</div>
+        <h4>Rosacea, kapillárisok</h4>
+        <p>Vizsgálatok szerint erősíti az erek falát és csökkenti a kapilláristáguláshoz vezető gyulladásos folyamatokat.</p>
+      </div>
+      <div class="for-whom-card caution fade-up">
+        <div class="for-whom-badge">⚠ Figyelem</div>
+        <h4>Ernyősvirágzatú allergia</h4>
+        <p>Ritka, de az Apiaceae (sárgarépa, zeller, petrezselyem) família iránt érzékenyeknél keresztreakció előfordulhat. Patch-teszt javasolt.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- HOW TO USE -->
+  <section class="section">
+    <div class="section-tag">Hogyan használd?</div>
+    <h2 class="section-title">Beépítés a napi rutinba</h2>
+    <p class="section-lead">A centella reggel és este egyaránt alkalmazható — nincs fotoszenzitizáló hatása, nem igényel különleges körültekintést más hatóanyagokkal kombinálva.</p>
+    <div class="routine-steps">
+      <div class="routine-step fade-up">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-timing">Reggel &amp; Este</div>
+          <h4>Tisztítás</h4>
+          <p>Gyengéd, pH-semleges arctisztítóval. A centella nem érzékenyíti a bőrt, így nincs különleges követelmény — de kerüld az agresszív hab- vagy géles tisztítókat, ha a centellát irritált bőrre alkalmazod.</p>
+        </div>
+      </div>
+      <div class="routine-step fade-up">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-timing">Reggel &amp; Este</div>
+          <h4>Centella szérum vagy ampoule</h4>
+          <p>Vizes tenyérbe vagy közvetlenül az arcra vive, enyhe bekopogtatással. Az ampoule koncentrált formátum — microneedling után különösen ajánlott. Reggel retinoid előtt, este retinoid után alkalmazva a legjobb.</p>
+        </div>
+      </div>
+      <div class="routine-step fade-up">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-timing">Reggel &amp; Este</div>
+          <h4>Hidratálókrém</h4>
+          <p>A centella jól kombinálható niacinamiddal, hialuronsavval és ceramidokkal. Kerüld az egyidejű használatot erős AHA/BHA savakkal (de nem kell teljesen kizárni — csak más alkalmakra oszd el).</p>
+        </div>
+      </div>
+      <div class="routine-step fade-up">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-timing">Csak reggel</div>
+          <h4>SPF 50+</h4>
+          <p>A centella nem fotoszenzitizál, de a kollagénépítő munkáját csak UV-védelem mellett tudja elvégezni hatékonyan — a napfény lebontja a kollagént. Reggeli rutinban kötelező lezárás.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="combo-box fade-up">
+      <h3>Microneedling + centella:<br>az ideális kombináció</h3>
+      <p>A microneedling mikrocsatornákon keresztül mélyen a bőrbe juttatja a hatóanyagokat, miközben stimulálja a természetes kollagénszintézist. A centella asiatica pontosan azokat a folyamatokat támogatja, amelyeket a microneedling beindít: fibroblaszt-aktiváció, sebgyógyítás, barrier-regeneráció.</p>
+      <p>Az eredmény: a microneedling hatása felerősödik, a downtime lerövidül, a bőr gyorsabban regenerálódik.</p>
+      <div class="combo-timeline">
+        <div class="timeline-item">
+          <div class="timeline-time">Kezelés előtt</div>
+          <div class="timeline-action">Centella szérum a bőr előkészítéséhez</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">Kezelés alatt</div>
+          <div class="timeline-action">Centella ampoule a tűhúzások közben</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">0–72 óra</div>
+          <div class="timeline-action">Centella + barrier krém, semmi más</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">3+ nap</div>
+          <div class="timeline-action">Visszatérés a teljes rutinhoz</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="section-tag">Gyakori kérdések</div>
+    <h2 class="section-title">Amit a legtöbben kérdeznek</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Kombinálható a centella retinollal vagy retinallal?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Igen, és kifejezetten jól működnek együtt. A retinoidok irritációt okozhatnak — a centella ezt tompítja. Javasolt sorrend: este retinoid, majd fölé centella krém. Vagy alternálva: egyik este retinoid, másik este centella-alapú rutin.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Centella és niacinamid együtt alkalmazható?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Teljesen kompatibilis kombináció — nincs köztük negatív interakció. A niacinamid porustágulat és faggyúszabályozás terén egészíti ki a centella barrier-erősítő hatását. Sok koreai skincare termék pont ezt a kettőt kombinálja.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Mikor láthatóak az első eredmények?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">A gyulladáscsökkentő és megnyugtató hatás szinte azonnal érezhető — általában az első 1–2 alkalmazás után. A kollagénszintézis-serkentés és a hosszú távú antiaging hatás rendszeres alkalmazás mellett 4–8 hét után válik láthatóvá.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Microneedling után mikor kezdhetem alkalmazni?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">A centella az egyik kevés hatóanyag, amelyet microneedling közben és közvetlenül utána is alkalmazhatsz. Nincs savtartalma, nem irritál, és aktívan segíti a regenerációt. Az első 72 órában centella + barrier krém kombinációja az ideális.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Milyen formátumban a leghatékonyabb?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Ampoule formátumban a legkoncentráltabb — microneedling mellé ez az ajánlott. Mindennapos hidratáláshoz és barrier-erősítéshez a krémes állag jobb, mert tápanyagdúsabb és tovább marad a bőrön. Sokan mindkettőt alkalmazzák: ampoule szérumként, majd hidratálókrém lezárásként.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="section-tag">Dermastamp.hu</div>
+      <h2 class="section-title">Centella termékek<br>microneedlinghez</h2>
+      <p>A SKIN1004 centella kollekció az egyik legjobban dokumentált centella-alapú termékcsalád — orvosok és dermatolusok által is ajánlott koreai formulációkkal.</p>
+      <div class="cta-product-box">
+        <div class="cta-product-icon">🌿</div>
+        <div class="cta-product-info">
+          <h4>SKIN1004 Centella Asiatica termékek</h4>
+          <p>Ampoule, hidratálókrém, cleansing foam és fényvédő — microneedlinghez optimalizált rutin</p>
+        </div>
+      </div>
+      <a href="https://dermastamp.hu/products/centella" class="btn-primary" rel="noopener" style="font-size: 16px; padding: 16px 32px;">
+        Megnézem a Dermastamp.hu-n
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-brand">centella<span>.hu</span></div>
+    <p>Edukációs tartalom — nem minősül orvosi tanácsadásnak.</p>
+    <a href="https://dermastamp.hu" rel="noopener">dermastamp.hu →</a>
+  </footer>
+
+  <script>
+    // FAQ toggle
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      item.classList.toggle('open');
+    }
+
+    // Fade-up on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
