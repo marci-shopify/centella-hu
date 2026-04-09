@@ -71,6 +71,19 @@
       -webkit-font-smoothing: antialiased;
     }
 
+    /* HERO IMG */
+    .hero-img-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+    }
+    .hero-full-img {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      display: block;
+    }
+
     /* NAV */
     nav {
       position: sticky;
@@ -600,6 +613,39 @@
     }
     .faq-item.open .faq-a { display: block; }
 
+    /* PRODUCT SHOWCASE */
+    .product-showcase {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 48px;
+      align-items: center;
+    }
+    .product-showcase-img {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .product-showcase-img img {
+      width: 100%;
+      display: block;
+    }
+    .product-showcase-text h3 {
+      font-family: var(--serif);
+      font-size: 28px;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .product-showcase-text p {
+      font-size: 15px;
+      color: var(--ink2);
+      line-height: 1.65;
+      margin-bottom: 12px;
+    }
+    @media (max-width: 700px) {
+      .product-showcase { grid-template-columns: 1fr; }
+    }
+
     /* CTA SECTION */
     .cta-section {
       background: var(--bg2);
@@ -719,7 +765,7 @@
   <section class="hero">
     <div class="hero-eyebrow">Hatóanyag tudástár</div>
     <h1>A bőr<br><em>legősibb</em><br>gyógyítója</h1>
-    <p class="hero-lead">A centella asiatica évezredek óta használt gyógynövény, amelyet ma a modern bőrápolástudomány is megerősített: kollagénszintézis, sebgyógyítás, bőrbarrier-erősítés — mind alátámasztva klinikai vizsgálatokkal.</p>
+    <p class="hero-lead">A centella asiatica évezredek óta használt gyógynövény, amelyet ma a modern bőrápolástudomány is megerősített: sebgyógyítás, bőrbarrier-erősítés, gyulladáscsökkentés — mind alátámasztva klinikai vizsgálatokkal.</p>
     <div class="hero-actions">
       <a href="https://dermastamp.hu/products/centella" class="btn-primary" rel="noopener">
         Centella termékek megtekintése
@@ -732,6 +778,11 @@
       Görgetés
     </div>
   </section>
+
+  <!-- HERO PLANT IMAGE -->
+  <div class="hero-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0958/9322/5804/files/Uses_of_Centella_Asiatica_and_when_to_use_it-min_e9fe890e-847d-41e3-a456-e3d29a8e0a99.webp?v=1775729657" alt="Centella asiatica – mikor és hogyan használd" class="hero-full-img" loading="lazy">
+  </div>
 
   <!-- STATS -->
   <div class="stats-bar">
@@ -797,7 +848,7 @@
             <small>Triterpen szaponin</small>
           </div>
           <div class="compound-desc">
-            <strong>Elsősorban a kollagénszintézist serkenti.</strong> Aktiválja a fibroblasztokat — azokat a bőrsejttípusokat, amelyek a kollagén és az elasztin előállításáért felelősek. In vitro vizsgálatokban szignifikánsan emelt I-es és III-as típusú kollagén-expressziót mutattak ki. Microneedling után különösen releváns, mivel a kezelés pont ezeket a sejteket aktiválja.
+            <strong>Elsősorban a kollagénszintézist serkenti.</strong> Aktiválja a fibroblasztokat — azokat a bőrsejttípusokat, amelyek a kollagén és az elasztin előállításáért felelősek. In vitro vizsgálatokban szignifikánsan emelt I-es és III-as típusú kollagén-expressziót mutattak ki.
           </div>
         </div>
         <div class="compound-item fade-up">
@@ -806,7 +857,7 @@
             <small>Triterpen szaponin</small>
           </div>
           <div class="compound-desc">
-            <strong>A gyulladáscsökkentő és sebgyógyító főszereplő.</strong> Gátolja a proinflammatorikus citokinek (TNF-α, IL-1β) termelését, ezzel csökkenti a bőrpírt és a duzzanatot. Tanulmányok szerint felgyorsítja az epidermiális barrier visszaépülését sérülés után — ez teszi nélkülözhetetlenné microneedling utáni regenerációban.
+            <strong>A gyulladáscsökkentő és sebgyógyító főszereplő.</strong> Gátolja a proinflammatorikus citokinek (TNF-α, IL-1β) termelését, ezzel csökkenti a bőrpírt és a duzzanatot. Tanulmányok szerint felgyorsítja az epidermiális barrier visszaépülését sérülés után — ez teszi különösen hatékonnyá irritált vagy érzékeny bőr regenerációjában.
           </div>
         </div>
         <div class="compound-item fade-up">
@@ -877,8 +928,8 @@
       </div>
       <div class="for-whom-card yes fade-up">
         <div class="for-whom-badge">✓ Ideális</div>
-        <h4>Microneedling után</h4>
-        <p>A barrier-erősítő és sebgyógyító hatások miatt az egyik legjobb post-needling hatóanyag. Csökkenti a downtime-ot és maximalizálja a regenerációt.</p>
+        <h4>Utóápolás bőrkezelés után</h4>
+        <p>A barrier-erősítő és gyulladáscsökkentő hatások miatt az egyik legjobb utóápolási hatóanyag irritált vagy érzékenyített bőrre. Segít a bőr megnyugtatásában és a regenerációban.</p>
       </div>
       <div class="for-whom-card yes fade-up">
         <div class="for-whom-badge">✓ Ideális</div>
@@ -945,27 +996,19 @@
       </div>
     </div>
 
-    <div class="combo-box fade-up">
-      <h3>Microneedling + centella:<br>az ideális kombináció</h3>
-      <p>A microneedling mikrocsatornákon keresztül mélyen a bőrbe juttatja a hatóanyagokat, miközben stimulálja a természetes kollagénszintézist. A centella asiatica pontosan azokat a folyamatokat támogatja, amelyeket a microneedling beindít: fibroblaszt-aktiváció, sebgyógyítás, barrier-regeneráció.</p>
-      <p>Az eredmény: a microneedling hatása felerősödik, a downtime lerövidül, a bőr gyorsabban regenerálódik.</p>
-      <div class="combo-timeline">
-        <div class="timeline-item">
-          <div class="timeline-time">Kezelés előtt</div>
-          <div class="timeline-action">Centella szérum a bőr előkészítéséhez</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-time">Kezelés alatt</div>
-          <div class="timeline-action">Centella ampoule a tűhúzások közben</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-time">0–72 óra</div>
-          <div class="timeline-action">Centella + barrier krém, semmi más</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-time">3+ nap</div>
-          <div class="timeline-action">Visszatérés a teljes rutinhoz</div>
-        </div>
+    <div class="product-showcase fade-up">
+      <div class="product-showcase-img">
+        <img src="https://cdn.shopify.com/s/files/1/0958/9322/5804/files/skin1004-madagascar-centella-ampoule-55-ml-533603-hu.webp?v=1775367119" alt="SKIN1004 Madagascar Centella Ampoule" loading="lazy">
+      </div>
+      <div class="product-showcase-text">
+        <div class="section-tag" style="margin-bottom: 12px;">Utóápolás</div>
+        <h3>Centella a bőrkezelések után</h3>
+        <p>Bőrkezelések, hámlasztások vagy bármilyen irritáló kezelés után a bőr barrierfunkciója átmenetileg gyengül. A centella asiatica ilyenkor az egyik leghasznosabb hatóanyag: megnyugtatja az irritált bőrt, támogatja a barrier visszaépülését, és csökkenti a vörösséget.</p>
+        <p>Az első 24–72 órában elegendő egy gyengéd centella ampoule és egy barrier-erősítő krém — felesleges ilyenkor aktív hatóanyagokat, savakat vagy retinoidokat használni.</p>
+        <a href="https://dermastamp.hu/products/centella" class="btn-primary" rel="noopener" style="margin-top: 24px; display: inline-flex;">
+          SKIN1004 Centella termékek
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </div>
   </section>
@@ -1000,17 +1043,17 @@
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
-          Microneedling után mikor kezdhetem alkalmazni?
+          Bőrkezelés után mikor kezdhetem alkalmazni?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">A centella az egyik kevés hatóanyag, amelyet microneedling közben és közvetlenül utána is alkalmazhatsz. Nincs savtartalma, nem irritál, és aktívan segíti a regenerációt. Az első 72 órában centella + barrier krém kombinációja az ideális.</div>
+        <div class="faq-a">A centella az egyik legkímélőbb hatóanyag, amit irritált bőrre is alkalmazhatsz. Nincs savtartalma, nem érzékenyít, és aktívan támogatja a bőr megnyugvását. Az első 24–72 órában centella ampoule és barrier krém kombinációja az ideális — más aktív hatóanyagtól érdemes ilyenkor szünetet tartani.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           Milyen formátumban a leghatékonyabb?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">Ampoule formátumban a legkoncentráltabb — microneedling mellé ez az ajánlott. Mindennapos hidratáláshoz és barrier-erősítéshez a krémes állag jobb, mert tápanyagdúsabb és tovább marad a bőrön. Sokan mindkettőt alkalmazzák: ampoule szérumként, majd hidratálókrém lezárásként.</div>
+        <div class="faq-a">Ampoule formátumban a legkoncentráltabb — irritált vagy érzékenyített bőr utóápolásához ez az ajánlott. Mindennapos hidratáláshoz és barrier-erősítéshez a krémes állag jobb, mert tápanyagdúsabb és tovább marad a bőrön. Sokan mindkettőt alkalmazzák: ampoule szérumként, majd hidratálókrém lezárásként.</div>
       </div>
     </div>
   </section>
@@ -1021,13 +1064,13 @@
   <section class="cta-section">
     <div class="cta-inner">
       <div class="section-tag">Dermastamp.hu</div>
-      <h2 class="section-title">Centella termékek<br>microneedlinghez</h2>
-      <p>A SKIN1004 centella kollekció az egyik legjobban dokumentált centella-alapú termékcsalád — orvosok és dermatolusok által is ajánlott koreai formulációkkal.</p>
+      <h2 class="section-title">Centella termékek<br>bőrápoláshoz</h2>
+      <p>A SKIN1004 centella kollekció az egyik legjobban dokumentált centella-alapú termékcsalád — koreai formulációkkal, amelyek irritált és érzékeny bőrre egyaránt alkalmasak.</p>
       <div class="cta-product-box">
         <div class="cta-product-icon">🌿</div>
         <div class="cta-product-info">
           <h4>SKIN1004 Centella Asiatica termékek</h4>
-          <p>Ampoule, hidratálókrém, cleansing foam és fényvédő — microneedlinghez optimalizált rutin</p>
+          <p>Ampoule, hidratálókrém, cleansing foam és fényvédő — érzékeny és irritált bőrre optimalizált rutin</p>
         </div>
       </div>
       <a href="https://dermastamp.hu/products/centella" class="btn-primary" rel="noopener" style="font-size: 16px; padding: 16px 32px;">
